@@ -24,7 +24,7 @@ locals {
 }
 
 resource "azurerm_resource_group" "webapprg1" {
-  name = "webapp98"
+  name = "webapp988"
   location = "East US"
   tags = {
     "name" = "${local.setup_name}-rsg"
@@ -32,7 +32,7 @@ resource "azurerm_resource_group" "webapprg1" {
 }
 
 resource "azurerm_app_service_plan" "appplan11" {
-  name = "appplandev"
+  name = "appplandev1"
   location = azurerm_resource_group.webapprg1.location
   resource_group_name = azurerm_resource_group.webapprg1.name
   sku {
@@ -48,7 +48,7 @@ resource "azurerm_app_service_plan" "appplan11" {
 }
 
 resource "azurerm_app_service" "webapp1" {
-  name = "webappdev"
+  name = "webappdev1"
   location = azurerm_resource_group.webapprg1.location
   resource_group_name = azurerm_resource_group.webapprg1.name
   app_service_plan_id = azurerm_app_service_plan.appplan11.id
