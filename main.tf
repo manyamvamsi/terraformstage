@@ -1,10 +1,10 @@
 terraform {
   backend "azurerm"{
-    resource_group_name = "datasourcerg"
-    storage_account_name = "datasource112"
-    container_name = "bookstorestate"
-    key = "terraform.bookstorestate"
-    access_key = "EY5HiaqzbgL49mozIJtnOp/w3gZ0bdPEVuy8Ve/wHQwSEMpoi/dyoFYDHZeCGPdJu7I9cTu7/FJ/+AStMigPJw=="
+    resource_group_name = "agarwood"
+    storage_account_name = "agar112"
+    container_name = "agarstore"
+    key = "terraform.agarstore"
+    access_key = "gnC5pL7P7G6YiCE/MVTKAT9usFd0BZMf8B0sRas0hf86VJYD2H5jD9nX9UJHvMGwXZBTvP8T/5GH+AStsWU89Q=="
 
   }
 }
